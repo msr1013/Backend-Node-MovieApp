@@ -1,5 +1,18 @@
+const mongoose = require("mongoose");
 const express = require("express");
 const router = express.Router();
+
+const Genre = new mongoose.model(
+  "Genre",
+  new mongoose.Schema({
+    name: {
+      type: String,
+      required: true,
+      minlength: 5,
+      maxlength: 50,
+    },
+  })
+);
 
 const courses = [
   { id: 1, name: "course1" },
