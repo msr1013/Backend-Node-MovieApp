@@ -2,16 +2,21 @@ const mongoose = require("mongoose");
 const genres = require("./routes/genres");
 const express = require("express");
 const customers = require("./routes/customers");
+const rentals = require("./routes/rentals");
+const movies = require("./routes/movies");
+
+const app = express();
 
 mongoose
   .connect("mongodb://localhost/nodemovie")
   .then(() => console.log("Connected to mongodb..database"))
   .catch((err) => console.error("Could not connect to mongodb.."));
 
-const app = express();
 app.use(express.json());
 app.use("/api/genres", genres);
 app.use("/api/customers", customers);
+app.use("/api/movies", movies);
+app.use("/api/rentals", rentals);
 
 //port
 const port = process.env.PORT || 3000;
