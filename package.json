@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "bcrypt": "4.0.1",
     "config": "3.3.6",
     "debug": "2.6.9",
     "express": "4.17.1",
