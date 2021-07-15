@@ -1,3 +1,16 @@
 {"message":"Something failed during startup","stack":"Error: Something failed during startup\n    at Object.<anonymous> (C:\\NewApp\\NodeProject\\first_app\\index.js:30:7)\n    at Module._compile (node:internal/modules/cjs/loader:1092:14)\n    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1121:10)\n    at Module.load (node:internal/modules/cjs/loader:972:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:813:14)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)\n    at node:internal/main/run_main_module:17:47","level":"error","timestamp":"2021-07-15T05:29:32.296Z"}
 {"message":"Something failed miserably!","stack":"Error: Something failed miserably!\n    at Object.<anonymous> (C:\\NewApp\\NodeProject\\first_app\\index.js:30:26)\n    at Module._compile (node:internal/modules/cjs/loader:1092:14)\n    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1121:10)\n    at Module.load (node:internal/modules/cjs/loader:972:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:813:14)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)\n    at node:internal/main/run_main_module:17:47","level":"error","timestamp":"2021-07-15T06:13:41.197Z"}
 {"message":"Something failed miserably!","stack":"Error: Something failed miserably!\n    at Object.<anonymous> (C:\\NewApp\\NodeProject\\first_app\\index.js:35:26)\n    at Module._compile (node:internal/modules/cjs/loader:1092:14)\n    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1121:10)\n    at Module.load (node:internal/modules/cjs/loader:972:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:813:14)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)\n    at node:internal/main/run_main_module:17:47","level":"error","timestamp":"2021-07-15T06:16:13.654Z"}
+{"level":"info","message":"Connected to mongodb..database","timestamp":"2021-07-15T10:40:31.919Z"}
+{"level":"info","message":"Connected to mongodb..database","timestamp":"2021-07-15T10:40:45.235Z"}
+{"level":"info","message":"Connected to mongodb..database","timestamp":"2021-07-15T10:42:16.665Z"}
+{"level":"info","message":"Connected to mongodb..database","timestamp":"2021-07-15T10:42:40.150Z"}
+{"level":"info","message":"Connected to mongodb..database","timestamp":"2021-07-15T10:44:51.808Z"}
+{"level":"info","message":"Connected to mongodb..database","timestamp":"2021-07-15T10:45:25.821Z"}
+{"level":"info","message":"Connected to mongodb..database","timestamp":"2021-07-15T10:45:51.213Z"}
+{"level":"info","message":"Connected to mongodb..database","timestamp":"2021-07-15T10:46:14.638Z"}
+{"level":"info","message":"Connected to mongodb..database","timestamp":"2021-07-15T10:46:24.406Z"}
+{"level":"info","message":"Connected to mongodb..database","timestamp":"2021-07-15T10:46:25.988Z"}
+{"level":"info","message":"Connected to mongodb..database","timestamp":"2021-07-15T10:47:21.714Z"}
+{"level":"info","message":"Connected to mongodb..database","timestamp":"2021-07-15T10:47:28.081Z"}
+{"level":"info","message":"Connected to mongodb..database","timestamp":"2021-07-15T10:48:18.629Z"}
