@@ -4,6 +4,7 @@
     "config": "1.29.4",
     "debug": "2.6.9",
     "express": "4.17.1",
+    "express-async-errors": "2.1.0",
     "fawn": "2.1.5",
     "helmet": "4.6.0",
     "joi": "13.1.0",
