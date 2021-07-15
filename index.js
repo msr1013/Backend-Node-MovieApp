@@ -11,13 +11,36 @@ const users = require("./routes/users");
 const auth = require("./routes/auth");
 const error = require("./middleware/error");
 require("express-async-errors");
-
+const winston = require("winston");
+require("winston-mongodb");
 const app = express();
 
-if (!config.get("jwtPrivateKey")) {
-  console.log("FATAL ERROR:jwtPrivateKey is not defined");
+process.on("uncaughtException", (ex) => {
+  winston.error(ex.message, ex);
   process.exit(1);
-}
+});
+
+winston.handleException(
+  new winston.transports.File({ filename: "uncaughtExceptions.log" })
+);
+
+process.on("unhandledRejection", (ex) => {
+  throw ex;
+});
+
+winston.add(winston.transports.File, { filename: "logfile.log" });
+winston.add(winston.transports.MongoDB, {
+  db: "mongodb://localhost/nodemovie",
+  level: "info",
+});
+
+const p = Promise.reject(new Error("Something failed miserably!"));
+p.then(() => console.log("Done"));
+
+// if (!config.get("jwtPrivateKey")) {
+//   console.log("FATAL ERROR:jwtPrivateKey is not defined");
+//   process.exit(1);
+// }
 
 mongoose
   .connect("mongodb://localhost/nodemovie")
